@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.8em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+  <title>git blame --emotions 💔</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Patrick+Hand&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="sparkleContainer"></div>
+
+<div class="crt-modal" id="crtModal">
+  <div class="crt-modal-box">
+    <div class="crt-modal-title">⚠️ BROWSER WARNING ⚠️</div>
+    <div class="crt-modal-body">
+      <p>This website was designed for a <strong>800×600 CRT monitor</strong>.</p>
+      <br>
+      <p>You appear to be viewing this on a <strong>mobile device</strong>.</p>
+      <br>
+      <p>Please rotate your CRT monitor 90 degrees and try again.</p>
+      <br>
+      <p style="font-size:48px;">🖥️</p>
+      <br>
+      <p style="font-size:18px;color:#461177;font-style:italic;">
+        (We are not responsible for any monitor damage incurred
+        while following these instructions.)
+      </p>
+    </div>
+    <button class="crt-modal-btn" onclick="closeCrtModal()">
+      I understand. Show me the site anyway. 😔
+    </button>
+  </div>
+</div>
+
+<div class="teapot-overlay" id="teapotOverlay">
+  <div class="teapot-emoji">☕</div>
+  <div class="teapot-msg">418 I'M A TEAPOT ☕</div>
+</div>
+
+<div class="marquee-wrap">
+  <marquee scrollamount="5">
+    💔 git blame --emotions 💔 &nbsp;|&nbsp; no solutions. just vibes. &nbsp;|&nbsp;
+    ✨ your errors have feelings too ✨ &nbsp;|&nbsp;
+    🌸 powered by gemini AI & dramatic poetry 🌸 &nbsp;|&nbsp;
+    💜 best viewed in netscape navigator 4.0 on a 800×600 CRT 💜 &nbsp;|&nbsp;
+    🚧 mobile users: please rotate your CRT monitor 🚧 &nbsp;|&nbsp;
+    ☕ RFC 2324 COMPLIANT ☕ &nbsp;|&nbsp;
+  </marquee>
+</div>
+
+<header>
+  <div class="deco-bar">🌸 ✿ 💜 ✿ 🌸 ✿ 💜 ✿ 🌸 ✿ 💜 ✿ 🌸</div>
+  <h1 class="site-title">git blame --emotions</h1>
+  <div class="subtitle">~ your errors have feelings. we just listen ~</div>
+  <div class="divider">✨💔✨💔✨</div>
+  <div class="visitor-counter">
+    🌟 you are visitor number <span class="counter-digits" id="visitorNum">000000</span> 🌟
+  </div>
+  <br>
+  <div class="under-construction">
+    <span class="blink">🚧</span>
+    &nbsp;UNDER ETERNAL EMOTIONAL CONSTRUCTION&nbsp;
+    <span class="blink">🚧</span>
+  </div>
+  <div class="deco-bar" style="margin-top:8px;">🌸 ✿ 💜 ✿ 🌸 ✿ 💜 ✿ 🌸 ✿ 💜 ✿ 🌸</div>
+</header>
+
+<main class="main-container">
+
+  <div class="mobile-banner">
+    📺 <strong>PRO TIP:</strong> This site looks better on a CRT monitor.
+    Since you don't have one, we are deeply sorry for your experience. 💔
+  </div>
+
+  <div class="panel">
+    <div class="panel-title-bar">💌 &nbsp; What Is This Mystical Place?</div>
+    <div class="panel-body about-box">
+      <p>Hail, weary architect of bugs 🌸</p><br>
+      <p>Thou hast knelt before Stack Overflow, whispering thy sins into the void... <strong>Naught hath worked.</strong></p><br>
+      <p><strong>git blame --emotions</strong> offereth something different: a <strong>Shakespearean sonnet</strong> that exploreth the deep emotional landscape of thine error. No solutions. No Stack Overflow links. Only <strong>vibes</strong>, iambic pentameter, and the gentle acknowledgment that <code>undefined is not a function</code> doth <em>grieve</em>.</p><br>
+      <p>⚠️ <strong>WARNING:</strong> This tool shall not fix thy code. It may, howsoe'er, fix thy soul. Results not guaranteed. Powered by <strong>Google Gemini AI</strong> and a complete disregard for productivity. ☕</p><br>
+      <p style="font-size:16px;color:#a855f7;"><em>* Paste a 418 or teapot error for a most special surprise *</em></p>
+</div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title-bar">😭 &nbsp; Paste Your Broken Dreams Here</div>
+    <div class="panel-body">
+      <textarea
+        class="error-textarea"
+        id="errorInput"
+        placeholder="TypeError: Cannot read properties of undefined (reading 'map')
+    at Component.render (app.js:42)
+    at processChild (/node_modules/react-dom/cjs/react-dom-server.node.development.js:3353)
+
+Paste any error, stack trace, or existential crisis here."
+      ></textarea>
+      <div class="char-hint" id="charHint">0 characters of pain</div>
+      <div class="error-msg" id="errorMsg"></div>
+      <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
+        💔 Translate My Suffering Into Poetry 💔
+      </button>
+    </div>
+  </div>
+
+  <div class="panel loading-area" id="loadingArea">
+    <div class="panel-body" style="text-align:center;">
+      <div class="loading-hearts">💔 💜 💔 💜 💔</div>
+      <div class="loading-text" style="margin-top:12px;">The Muse is weeping over your error...</div>
+      <div style="font-size:14px;color:#a855f7;margin-top:8px;">(consulting the ancient scrolls of iambic pentameter)</div>
+    </div>
+  </div>
+
+  <div class="panel sonnet-area" id="sonnetArea">
+    <div class="panel-title-bar">📜 &nbsp; Thy Error, Rendered in Verse</div>
+    <div class="panel-body">
+      <div style="text-align:center;">
+        <span class="error-badge" id="errorBadge">error detected</span>
+      </div>
+      <div class="sonnet-box">
+        <div class="sonnet-title" id="sonnetTitle">A Lament Most Dire</div>
+        <div class="sonnet-text" id="sonnetText"></div>
+      </div>
+      <div class="sonnet-footer">
+        ~ no solutions were harmed in the making of this poem ~<br>
+        <em>powered by Google Gemini AI & pure emotional chaos</em>
+      </div>
+      <button class="reset-btn" onclick="resetForm()">🌸 Weep About Another Error 🌸</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title-bar">🏆 &nbsp; Hall of Fame Errors</div>
+    <div class="panel-body">
+      <div style="font-size:18px;color:#6b21a8;line-height:2.2;">
+        🥇 <strong>NullPointerException</strong> — "a void where love should be" ✨<br>
+        🥈 <strong>Segmentation fault (core dumped)</strong> — "thy memory, shattered like my heart" 💔<br>
+        🥉 <strong>418 I'm a Teapot</strong> — <em>[classified. paste it and see.]</em> ☕<br>
+        🏅 <strong>undefined is not a function</strong> — "thou art nothing, and nothing thou shalt do" 😭<br>
+        🎖️ <strong>ECONNREFUSED</strong> — "the server refuses me as thou hast refused my calls" 📵<br>
+        🎖️ <strong>404 Not Found</strong> — "a lonely ghost in a digital hallway" 👻
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="deco-bar">🌸 ✿ 💜 ✿ 🌸 ✿ 💜 ✿ 🌸 ✿ 💜 ✿ 🌸</div>
+  <br>
+  💔 <strong>git blame --emotions</strong> © 1999 💔<br>
+  Made with tears, Google Gemini AI, and Comic Sans.<br>
+  <em>RFC 2324 compliant. No bugs were fixed during the making of this website.</em><br>
+  Best viewed in 800×600 resolution on a CRT monitor 🖥️
+  &nbsp;|&nbsp; <span class="blink">● ONLINE</span>
+  &nbsp;|&nbsp; <a href="#">Sign our Guestbook</a>
+  <br><br>
+  <span style="font-size:16px;color:#71227d;">
+    📱 Mobile users: we see you. We pity you. 💔
+  </span>
+</footer>
+
+</body>
+</html>
