@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/poem.js": {
+      "memory": 256,
+      "maxDuration": 30
+    }
+  }
+}
