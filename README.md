@@ -45,7 +45,6 @@ This tool will not fix your bugs. It will not suggest a solution. It will not li
 - 🚧 Blinking "UNDER ETERNAL EMOTIONAL CONSTRUCTION" sign
 - 📺 Mobile users get a modal asking them to rotate their CRT monitor
 - 418/teapot easter egg with full confetti cannon
-- 😵 The entire page is rotated `0.6deg` - just enough to feel wrong
 - 🏆 Hall of Fame featuring the most emotionally devastating errors in history
 
 ---
