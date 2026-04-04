@@ -2,7 +2,7 @@
 
 > *No solutions. Just vibes.*
 
-![git blame --emotions in action](https://highflyer910.sirv.com/git-blame.png)
+![git blame --emotions in action](https://highflyer910.sirv.com/gitblame.png)
 
 A Shakespearean error therapy app powered by Google Gemini AI and a complete disregard for productivity.
 
