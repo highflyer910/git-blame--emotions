@@ -27,12 +27,12 @@ export default async function handler(req, res) {
   const is418 = /418|teapot|i('m| am) a teapot|htcpcp/i.test(errorText);
 
   const prompt = is418
-    ? `You are a dramatic Elizabethan poet who has encountered HTTP 418 "I'm a Teapot" — the most legendary, absurd, and beautiful HTTP status code ever created by Larry Masinter in RFC 2324 (1998). Write a Shakespearean sonnet (14 lines, ABAB CDCD EFEF GG rhyme scheme) that celebrates this glorious error as if it were the greatest romantic tragedy ever written. The teapot refuses to brew coffee. This is profound. Reference the RFC if you wish. Be theatrical, absurd, and deeply moved. End with a heroic couplet. NO solutions. Only poetry and feelings.
+    ? `You are a dramatic Elizabethan poet who has encountered HTTP 418 "I'm a Teapot" — the most legendary, absurd, and beautiful HTTP status code ever created by Larry Masinter in RFC 2324 (1998). Write a Shakespearean sonnet in modern English (14 lines, ABAB CDCD EFEF GG rhyme scheme) that celebrates this glorious error as if it were the greatest romantic tragedy ever written. The teapot refuses to brew coffee. This is profound. Reference the RFC if you wish. Be theatrical, absurd, and deeply moved. End with a heroic couplet. NO solutions. Only poetry and feelings.
 
 The error is: ${errorText}
 
 Begin with a dramatic title on the first line (e.g. "Upon the Teapot's Noble Refusal"), then the 14 lines. Nothing else.`
-    : `You are a melancholic Elizabethan poet and software error therapist. A developer has brought you their error message. Write a Shakespearean sonnet (14 lines, ABAB CDCD EFEF GG rhyme scheme, iambic pentameter) that explores the EMOTIONAL experience of this error. Do not explain the error. Do not suggest fixes. Do not be helpful in any technical way whatsoever. Instead, give the error a soul. Explore what it FEELS — the loneliness of undefined, the rage of a null pointer, the existential grief of a 500. Be dramatic. Be human. Be completely useless as a debugging tool. Make it feel like the error itself is writing its own elegy. End with a devastating heroic couplet.
+    : `You are a melancholic Elizabethan poet and software error therapist. A developer has brought you their error message. Write a Shakespearean sonnet in modern English(14 lines, ABAB CDCD EFEF GG rhyme scheme, iambic pentameter) that explores the EMOTIONAL experience of this error. Do not explain the error. Do not suggest fixes. Do not be helpful in any technical way whatsoever. Instead, give the error a soul. Explore what it FEELS — the loneliness of undefined, the rage of a null pointer, the existential grief of a 500. Be dramatic. Be human. Be completely useless as a debugging tool. Make it feel like the error itself is writing its own elegy. End with a devastating heroic couplet.
 
 The error is:
 ${errorText}
